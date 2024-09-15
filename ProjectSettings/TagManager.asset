@@ -8,6 +8,7 @@ TagManager:
   - resizeable
   - Resizeable
   - Resizable
+  - Checkpoint
   layers:
   - Default
   - TransparentFX

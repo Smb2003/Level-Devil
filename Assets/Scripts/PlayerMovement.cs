@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField]private float speed;
     [SerializeField] private float jumpPower;
-    private float wallJumpCoolDown;
+    //private float wallJumpCoolDown;
     private float HorizontalInput;
     [Header("Multiple Jump")]
     [SerializeField] private int extraJumps;
@@ -131,7 +131,7 @@ public class PlayerMovement : MonoBehaviour
                 {
                     body.velocity = new Vector2(-Mathf.Sign(transform.localScale.x) * 3, 6);
                 }
-                wallJumpCoolDown = 0;
+                //wallJumpCoolDown = 0;
             }
 
         }
@@ -146,7 +146,7 @@ public class PlayerMovement : MonoBehaviour
     private void onWallJump()
     {
         body.AddForce(new Vector2(-Mathf.Sign(transform.localScale.x) * WallJumpX, WallJumpY));
-        wallJumpCoolDown = 0;
+        //wallJumpCoolDown = 0;
 
     }
 
